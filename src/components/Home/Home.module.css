@@ -1,0 +1,38 @@
+.Caption {
+  position: absolute;
+  top: 22%;
+  right: 0;
+  width: 58%;
+  font-family: 'Libre Baskerville', serif;
+  padding: 41px;
+  color: white;
+  background: rgba(0,0,0,.5);
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Content{
+  padding-top: 6%;
+}
+
+.HomeBody{
+  height: 94vh;
+}
+
+.Thumbnail {
+  position: relative;
+  text-align: center;
+}
+
+.Thumbnail img{
+  width: 50%;
+  display: flex;
+}
+
+.Title{
+  position: absolute;
+  right: 10%;
+  top: 6%;
+}
+.Title h1{
+  font-size: 5rem;
+}
