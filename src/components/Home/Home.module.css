@@ -11,12 +11,12 @@
 }
 
 .Content{
-  padding-top: 6%;
+  padding-top: 13%;
+  height: 30vh;
 }
 
-.HomeBody{
-  height: 94vh;
-}
+/* .HomeBody{
+} */
 
 .Thumbnail {
   position: relative;

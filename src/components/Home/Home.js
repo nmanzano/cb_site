@@ -6,8 +6,6 @@ import headshot from '../../assets/images/headshot.jpg';
 
 const home = (props) => (
     <Container className={classes.HomeBody}>
-      <Row>
-      </Row>
       <Row className={classes.Content}>
         <div className={classes.Thumbnail}>
           <div className={classes.Title}>

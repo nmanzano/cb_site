@@ -1,0 +1,86 @@
+.RightCard {
+  /* border: 1px solid blue; */
+  position: relative;
+  margin-top: 6%;
+  background-color: #d4d4d4;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-right: 0;
+  left: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.RightFiller{
+  /* border: 1px solid black; */
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  height: -webkit-fill-available;
+  top: 0;
+  background-color: #d4d4d4;
+}
+
+.Elearning {
+  position: relative;
+  min-height: 100vh;
+  position: relative;
+  margin-top: 12%;
+}
+
+
+.ContentWrap{
+ padding-bottom: 2.5rem;
+ width: 94%;
+ float: right;
+}
+
+.MainTitle{
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 96%;
+  top: 242px;
+  font-size: -webkit-xxx-large;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+.ProjectDesc{
+  position: relative;
+  text-align: center;
+}
+
+.ProjectDesc h2{
+  width: max-content;
+  text-align: center;
+  margin: auto;
+}
+
+.ProjectDesc img{
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.FullOverlay{
+  background-color: black;
+  position: relative;
+}
+
+.FullOverlay:hover > img{
+  cursor: pointer;
+  position: sticky;
+  z-index: 5;
+  opacity: 0.2;
+  transition: opacity 1s;
+}
+
+.Viewproject{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}

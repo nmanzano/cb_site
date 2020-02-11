@@ -15,5 +15,5 @@
 .stickyHeader {
   position: sticky;
   top: 1px;
-  z-index: 0px;
+  z-index: 6;
 }

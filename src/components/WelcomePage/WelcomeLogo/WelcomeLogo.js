@@ -8,7 +8,7 @@ const welcomeLogo = (props) => (
     <Container className={classes.ContainerColor}>
       <Row style={{zIndex:'0'}} className={classes.Box}></Row>
       <Row style={{zIndex:'2', paddingTop:'20px'}} className="justify-content-center"><h1>CASSANDRA</h1></Row>
-      <Row style={{zIndex:'2'}} className={"justify-content-sm-center" + ' ' + classes.subheadings}>
+      <Row style={{zIndex:'2'}} className={"justify-content-sm-center " + classes.subheadings}>
         <Col style={{textAlign:'center', backgroundColor: '#f3f3f3'}} xs md="auto">INSTRUCTIONAL DESIGNER</Col>
         <Col style={{textAlign:'center'}} xs md="auto"><span className={classes.Dot}></span></Col>
         <Col style={{textAlign:'center'}} xs md="auto">TRAINER</Col>
