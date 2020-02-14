@@ -5,7 +5,7 @@ import Aux from '../../hoc/Aux/Aux';
 
 const welcomePage = (props) => (
   <Aux>
-    <div className={classes.Logo}>
+    <div className={classes.WelcomePage}>
       <WelcomeLogo></WelcomeLogo>
     </div>
   </Aux>

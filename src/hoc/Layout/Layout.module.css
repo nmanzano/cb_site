@@ -1,8 +1,6 @@
 .Content{
-  background-color: white;
+  /* background-color: red; */
   /* height: 90vh; */
   /* padding-top: 10%; */
   padding-bottom: 1%;
-  overflow-x: hidden;
-  overflow-y: auto;
 }

@@ -1,66 +1,31 @@
-.RightCard {
-  /* border: 1px solid blue; */
+.LeftCard{
   position: relative;
   margin-top: 6%;
   background-color: #d4d4d4;
-  padding-left: 0;
+  /* padding-left: 0;
   padding-top: 20px;
-  padding-right: 0;
+  padding-right: 0; */
+  padding: 30px;
   left: 0;
   font-family: 'Libre Baskerville', serif;
 }
 
-.RightFiller{
-  /* border: 1px solid black; */
+.LeftFiller{
   width: 100%;
   position: absolute;
-  left: 100%;
+  right: 100%;
   height: -webkit-fill-available;
   top: 0;
   background-color: #d4d4d4;
 }
 
-/* .Elearning {
-  position: relative;
-  min-height: 100vh;
-  position: relative;
-  margin-top: 12%;
-} */
-
-
-.ContentWrap{
- padding-bottom: 2.5rem;
- width: 94%;
- float: right;
-}
-
 .MainTitle{
   position: absolute;
-  transform: rotate(-90deg);
-  right: 95%;
+  transform: rotate(90deg);
+  left: 98%;
   top: 242px;
   font-size: -webkit-xxx-large;
   font-family: 'Libre Baskerville', serif;
-}
-
-
-.ProjectDesc{
-  position: relative;
-  text-align: center;
-}
-
-.ProjectDesc h2{
-  width: max-content;
-  text-align: center;
-  margin: auto;
-}
-
-.ProjectDesc img{
-  cursor: pointer;
-  width: 100%;
-  position: relative;
-  opacity: 1;
-  transition: opacity 1s;
 }
 
 .FullOverlay{
@@ -83,4 +48,8 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.RightText > h2 {
+  margin-top: 30px;
 }

@@ -6,12 +6,15 @@ import headshot from '../../assets/images/headshot.jpg';
 
 const home = (props) => (
     <Container className={classes.HomeBody}>
-      <Row className={classes.Content}>
+      <div className={classes.TRYTHIS}></div>
+      <div className={classes.Content}>
         <div className={classes.Thumbnail}>
           <div className={classes.Title}>
             <h1>WELCOME</h1>
           </div>
-          <img src={headshot} alt="" />
+          <div>
+            <img src={headshot} alt="" />
+          </div>
           <div className={classes.Caption}>
             <p>
               I am a life-long learner with a passion for helping people reach their highest potential,
@@ -34,7 +37,7 @@ const home = (props) => (
             </p>
           </div>
         </div>
-      </Row>
+      </div>
     </Container>
 )
 

@@ -6,9 +6,11 @@ import portfolio_prassessment from '../../assets/images/portfolio_prassessment.p
 
 import addie_model from '../../assets/images/addie_model.png'
 import three_instructional_archs from '../../assets/images/three_instructional_archs.png'
+import portfolio_video from '../../assets/images/portfolio_video.png'
 
 import CenterCard from '../../containers/Cards/CenterCard/CenterCard';
 import RightCard from '../../containers/Cards/RightCard/RightCard';
+import LeftCard from '../../containers/Cards/LeftCard/LeftCard';
 
 class Portfolio extends Component {
   render(){
@@ -30,6 +32,12 @@ class Portfolio extends Component {
           rightH2={'Three Instructional Architectures'}
           rightLink={"https://rise.articulate.com/share/nzFmNqg8rNLRQEA5F1C2Riy_ZimopC1I"}
           ></RightCard>
+        <LeftCard
+          mainTitle={'Video'}
+          leftH2={''}
+          rightLink=''
+          imageright={portfolio_video}
+          ></LeftCard>
       </Container>
     )
   }

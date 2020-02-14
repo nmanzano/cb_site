@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Aux from './hoc/Aux/Aux';
-import classes from './App.module.css'
 import Layout from './hoc/Layout/Layout';
 import WelcomePage from './components/WelcomePage/WelcomePage';
 import Home from './components/Home/Home';
@@ -17,7 +16,7 @@ class App extends Component {
   render(){
     return (
       <Aux>
-        <Route className={classes.FixedHeader} path="/" exact component={WelcomePage}></Route>
+        <Route path="/" exact component={WelcomePage}></Route>
         <Layout>
           <Switch>
             <Route path={["/", "/home"]} exact component={Home}></Route>
