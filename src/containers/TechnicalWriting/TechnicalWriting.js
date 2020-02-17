@@ -8,8 +8,14 @@ import LeftCard from '../../components/CardsTwo/LeftCard/LeftCard';
 import RightCard from '../../components/CardsTwo/RightCard/RightCard';
 
 import portfolio_examples from '../../assets/images/portfolio_examples.png'
-import ProjectProposal_staar from '../../assets/images/ProjectProposal_staar.png'
-import ProjectProposal_phases from '../../assets/images/ProjectProposal_phases.png'
+import projectproposal_staar from '../../assets/images/ProjectProposal_staar.png'
+import projectproposal_phases from '../../assets/images/ProjectProposal_phases.png'
+import usermanual_intro from '../../assets/images/usermanual_intro.png'
+import user_manual_continue from '../../assets/images/user_manual_continue.png'
+import job_description from '../../assets/images/job_description.png'
+import jobaids from '../../assets/images/jobaids.png'
+
+
 import ViewProjectLink from "../ViewProjectLink/ViewProjectLink"
 
 class TechnicalWriting extends Component{
@@ -26,7 +32,8 @@ class TechnicalWriting extends Component{
                 <Col xs="12" lg="6">
                   <ul>
                     <li><h2>Storyboarding</h2></li>
-                    <li>Audience: Instructional Designers, Trainers Date: 2019</li>
+                    <li>Audience: Instructional Designers, Trainers</li>
+                    <li>Date: 2019</li>
                     <li>Role: Instructional Designer</li>
                     <li>Medium: Google Doc</li>
                     <li>Tools: Google Suite</li>
@@ -41,7 +48,7 @@ class TechnicalWriting extends Component{
                     cardImage={portfolio_examples}
                     >
                   </ViewProjectLink>
-                  <ul>
+                  <ul className={classes.CurriculumStyle}>
                     <li><h2>Curriculum Writing</h2></li>
                     <li>Audience: Instructional Designers, Curriculum Department</li>
                     <li>Date: 2017</li>
@@ -62,13 +69,13 @@ class TechnicalWriting extends Component{
                 <h3>Project Management Plan: English</h3>
                 <h3>STAAR Boocamp</h3>
                 <ViewProjectLink
-                  cardImage={ProjectProposal_staar}
+                  cardImage={projectproposal_staar}
                   >
                 </ViewProjectLink>
               </Col>
               <Col xs="12" lg="6">
                 <ViewProjectLink
-                  cardImage={ProjectProposal_phases}
+                  cardImage={projectproposal_phases}
                   >
                 </ViewProjectLink>
                 <ul>
@@ -83,18 +90,85 @@ class TechnicalWriting extends Component{
           </LeftCard>
         </div>
         <div className={classes.UserManual}>
-          <RightCard>
+          <RightCard
+            mainTitle="User Manual"
+            >
             <Row>
-              <Col></Col>
-              <Col></Col>
+              <Col xs="12" lg="6">
+                <ViewProjectLink
+                  cardImage={usermanual_intro}
+                  >
+                </ViewProjectLink>
+              </Col>
+              <Col xs="12" lg="6">
+                <ViewProjectLink
+                  cardImage={user_manual_continue}
+                  >
+                </ViewProjectLink>
+              </Col>
             </Row>
+            <div>
+              <ul>
+                <li>Audience: Graduate Students</li>
+                <li>Date: 2019</li>
+                <li>Role: Technical Writer, Curriculum Developer</li>
+                <li>Medium: PDF</li>
+                <li>Tools: Blackboard, Adobe Creative Suite, Grammerly, Curriculum Mapping</li>
+              </ul>
+            </div>
           </RightCard>
         </div>
         <div className={classes.JobDescription}>
-          This is JobDescription
-        </div>
+          <LeftCard
+            mainTitle="Job Description"
+            >
+            <div className={classes.JobDescriptionSpacer}></div>
+            <Row>
+              <Col xs="12" lg="6">
+                <ViewProjectLink
+                  cardImage={job_description}
+                  >
+                </ViewProjectLink>
+              </Col>
+              <Col xs="12" lg="6">
+                <ul>
+                  <li>
+                    <h2>Job Description and Expectations</h2>
+                  </li>
+                  <li>Audience: Homebound Teachers at Harker Heights High School</li>
+                  <li>Date: 2018</li>
+                  <li>Role: Project Manager, Technical Writer</li>
+                  <li>Medium: PDF</li>
+                  <li>Tools: Adobe Creative Suite, Microsoft Office, Trello, Remind</li>
+                </ul>
+                </Col>
+              </Row>
+              <div className={classes.JobDescriptionSpacer}></div>
+            </LeftCard>
+          </div>
         <div className={classes.JobAids}>
-          This is JobAids
+          <RightCard
+            mainTitle="Job Aids"
+            >
+            <Row>
+              <Col xs="12" lg="6">
+                <ul>
+                  <li><h2>How to Request a Substitute</h2></li>
+                  <li>Audience: New Teachers at Georgetown High School</li>
+                  <li>Date: 2018</li>
+                  <li>Role: Technical Writer</li>
+                  <li>Medium: PDF</li>
+                  <li>Tools: Google Classroom, Google Suite</li>
+                </ul>
+              </Col>
+              <Col xs="12" lg="6">
+                <ViewProjectLink
+                  cardImage={jobaids}
+                  >
+                  </ViewProjectLink>
+              </Col>
+            </Row>
+          </RightCard>
         </div>
       </Aux>
     )

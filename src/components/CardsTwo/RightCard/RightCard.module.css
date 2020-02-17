@@ -1,7 +1,7 @@
 .Body{
   max-width: 1029.8px;
   margin: auto;
-  background-color: #d4d4d4;
+  background-color: #f3f3f3;
   margin-top: 60px;
   padding: 25px;
   font-family: 'Libre Baskerville', serif;
@@ -14,20 +14,28 @@
 
 .RightFiller{
   left: 68%;
-  width: 50%;
+  width: 100%;
   position: absolute;
   height: -webkit-fill-available;
   top: 0;
-  background-color: #d4d4d4;
+  background-color: #f3f3f3;
+  z-index: -1;
+}
+
+.MainTitleParentDiv{
+  /* border: 1px solid red; */
+  width: 500px;
+  position: absolute;
+  right: 78%;
+  top:50%;
 }
 
 
 .MainTitle{
-  position: absolute;
-  transform: rotate(90deg);
-  right: 88%;
-  top: 242px;
-  width: fit-content;
+  transform: rotate(-90deg);
+  right: 95%;
+  width: 400px;
+  text-align: center;
   font-size: -webkit-xxx-large;
   font-family: 'Libre Baskerville', serif;
 }

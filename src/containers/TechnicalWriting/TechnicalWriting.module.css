@@ -1,6 +1,10 @@
-.Intro{
-  /* height: 100vh; */
-  width: 99%;
+.CurriculumStyle{
+  text-align: right;
+}
+
+
+.Intro ul{
+  /* width:100%; */
 }
 
 .Portfolio {
@@ -14,23 +18,26 @@
   font-size: 372%;
 }
 
-.ProjectProposal{
-  /* width: 99%; */
-  /* background-color: green; */
-  /* height: 100vh; */
+.ProjectProposal ul, h3{
+  text-align: center;
 }
 
-.UserManual{
-  background-color: red;
-  /* height: 100vh; */
+.UserManual ul{
+  text-align: center;
 }
 
-.JobDescription{
-  background-color: blue;
-  /* height: 100vh; */
+.JobDescription ul{
+  padding: 50px;
+}
+
+.JobDescriptionSpacer{
+  height: 40px;
 }
 
 .JobAids{
-  background-color: red;
-  /* height: 100vh; */
+  padding-bottom: 6%;
+}
+
+.JobAids ul{
+  margin-top: 85px;
 }
