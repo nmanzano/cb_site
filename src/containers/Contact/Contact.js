@@ -1,13 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import PDFViewer from '../../components/PDFViewer/PDFViewer';
+import PDFJSBackend from '../../backends/pdfjs';
 
-class Contact extends Component{
+class Contact extends Component {
 
-  render(){
-    return(
-      <h1>Contact</h1>
-    )
+  render() {
+    return (
+      <div>
+        <PDFViewer
+          backend={PDFJSBackend}
+          src='/somefile.pdf'
+         />
+      </div>
+    );
   }
-
 }
 
 export default Contact;
