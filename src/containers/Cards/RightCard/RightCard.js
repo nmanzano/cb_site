@@ -43,17 +43,7 @@ class RightCard extends Component {
             </a>
             <br></br>
           </div>
-              <p>
-                Audience: Instructional Designers
-                <br></br>
-                Date: 2019
-                <br></br>
-                Role: Instructional Designer
-                <br></br>
-                Medium: eLearning
-                <br></br>
-                Tools: Articulate Rise, Google Slides, Camtasia
-              </p>
+            {this.props.children}
         </Col>
         <Col className="col-12 col-md-6 ">
           <div className={classes.ProjectDesc}>
@@ -69,17 +59,7 @@ class RightCard extends Component {
             </a>
             <br></br>
           </div>
-            <p>
-              Audience: Instructional Designers
-              <br></br>
-              Date: 2019
-              <br></br>
-              Role: Instructional Designer
-              <br></br>
-              Medium: eLearning
-              <br></br>
-              Tools: Articulate Rise, Google Slides, Camtasia
-            </p>
+            {this.props.children}
         </Col>
         <div className={classes.RightFiller}>
         </div>

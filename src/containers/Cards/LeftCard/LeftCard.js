@@ -43,18 +43,7 @@ class LeftCard extends Component {
         </div>
         </Col>
         <Col className={"col-12 col-md-6" + ' ' + classes.RightText}>
-          <h2>How to Create a Course in Rise</h2>
-          <p>
-            Audience: eLearning Designer
-            <br></br>
-            Date: 2019
-            <br></br>
-            Role: Instructional Designer
-            <br></br>
-            Medium: Video
-            <br></br>
-            Tools: Articulate Rise, Google Slides, Camtasia
-          </p>
+          {this.props.children}
         </Col>
         <div>
           <h2 className={classes.MainTitle}>{this.props.mainTitle}</h2>

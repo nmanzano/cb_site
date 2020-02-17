@@ -16,7 +16,7 @@
   box-sizing: border-box;
   display: block;
   height: inherit;
-  line-height: 63px;
+  /* line-height: 63px; */
 }
 
 .NavigationItem a:hover,

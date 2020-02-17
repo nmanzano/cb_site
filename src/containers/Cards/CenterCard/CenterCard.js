@@ -24,6 +24,7 @@ class CenterCard extends Component {
     return(
       <Row className={classes.Projectcard}>
         <Col className={"col-12 col-md-6 " + classes.Projectheader}>
+          <h2>{this.props.leftTitle}</h2>
           <div className={classes.Projectdesc}>
             <a href="/" target="_blank">
               <div
@@ -40,21 +41,10 @@ class CenterCard extends Component {
             </a>
             <br>
             </br>
-            <p>
-              Audience: Georgetown ISD Teachers
-              <br>
-              </br>
-              Date: Spring 2019
-              <br>
-              </br>
-              Role: Instructional Designer & Trainer
-              <br>
-              </br>
-              Medium: Instructor-led course with workbook Tools: Adobe Indesign, Google Classroom, Nearpod
-            </p>
+            {this.props.children}
           </div>
         </Col>
-        <Col className="col-12 col-md-6 ">
+        <Col className={"col-12 col-md-6 " + classes.Projectheader}>
           <h2>{this.props.rightTitle}</h2>
           <br></br>
           <a href="/" target="_blank">

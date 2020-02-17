@@ -1,0 +1,33 @@
+.Projectdesc{
+  position: relative;
+}
+
+.Projectdesc img{
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.FullOverlay{
+  background-color: black;
+  position: relative;
+}
+
+.FullOverlay:hover > img{
+  cursor: pointer;
+  position: sticky;
+  z-index: 5;
+  opacity: 0.2;
+  transition: opacity 1s;
+}
+
+
+.Viewproject{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
