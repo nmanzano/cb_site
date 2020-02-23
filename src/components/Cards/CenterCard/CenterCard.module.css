@@ -5,8 +5,18 @@
   margin-top: 60px;
   padding: 25px;
   font-family: 'Libre Baskerville', serif;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Body ul {
   list-style-type: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .Body{
+    height: auto;
+  }
 }

@@ -1,43 +1,46 @@
-.Caption {
-  position: absolute;
-  top: 18%;
-  /* right: 0; */
-  left: 40%;
-  width: 70%;
+.HomeText {
   font-family: 'Libre Baskerville', serif;
-  padding: 41px;
-  color: white;
-  background: rgba(0,0,0,.5);
-  text-shadow: 1px 1px 2px #000000;
-  border: 1px solid white;
+  text-align: left;
 }
 
-.Content{
-  /* padding-top: 13%; */
-  /* height: 30vh; */
+.HeadShotParentDiv{
+  width: 75%;
+  margin: auto;
+}
+
+.HeadShotParentDiv img{
+  width: 100%;
 }
 
 .HomeBody{
-  /* height: 100vh; */
-  padding-top: 26px;
-}
+  height: 80vh;
 
-.Thumbnail {
   position: relative;
-  text-align: center;
-  /* overflow: hidden; */
 }
 
-.Thumbnail img{
-  width: 50%;
-  display: flex;
+.HomeBodyContainer{
+
 }
 
-.Title{
-  position: absolute;
-  right: 5%;
-  top: 3%;
+@media only screen and (max-width: 991px) {
+  .HomeBody{
+    height: auto;
+  }
+  .HomeBodyContainer{
+    padding: 5%;
+  }
+  .HomeText {
+    padding-top: 4%;
+  }
 }
-.Title h1{
-  font-size: 5rem;
+@media only screen and (min-width: 991px) {
+  .HomeBody{
+    height: 85vh;
+  }
+  .HomeBodyContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

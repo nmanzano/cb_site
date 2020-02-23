@@ -3,8 +3,8 @@
 }
 
 
-.Intro ul{
-  /* width:100%; */
+ul{
+  padding-top: 20px;
 }
 
 .Portfolio {
@@ -26,10 +26,6 @@
   text-align: center;
 }
 
-.JobDescription ul{
-  padding: 50px;
-}
-
 .JobDescriptionSpacer{
   height: 40px;
 }
@@ -38,6 +34,15 @@
   padding-bottom: 6%;
 }
 
-.JobAids ul{
+.JobAids ul, .JobDescription ul{
   margin-top: 85px;
+}
+
+@media only screen and (max-width: 992px) {
+  ul{
+    padding-top: 5px;
+  }
+  .JobAids ul, .JobDescription ul{
+    margin-top: 0px;
+  }
 }

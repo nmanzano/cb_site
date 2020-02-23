@@ -3,9 +3,9 @@ import classes from './TechnicalWriting.module.css'
 import { Container, Row, Col } from 'react-bootstrap';
 import Aux from '../../hoc/Aux/Aux.js'
 
-import CenterCard from '../../components/CardsTwo/CenterCard/CenterCard';
-import LeftCard from '../../components/CardsTwo/LeftCard/LeftCard';
-import RightCard from '../../components/CardsTwo/RightCard/RightCard';
+import CenterCard from '../../components/Cards/CenterCard/CenterCard';
+import LeftCard from '../../components/Cards/LeftCard/LeftCard';
+import RightCard from '../../components/Cards/RightCard/RightCard';
 
 import portfolio_examples from '../../assets/images/portfolio_examples.png'
 import projectproposal_staar from '../../assets/images/ProjectProposal_staar.png'
@@ -106,31 +106,30 @@ class TechnicalWriting extends Component{
                   >
                 </ViewProjectLink>
               </Col>
+              <Col xs="12" lg="12">
+                <ul>
+                  <li>Audience: Graduate Students</li>
+                  <li>Date: 2019</li>
+                  <li>Role: Technical Writer, Curriculum Developer</li>
+                  <li>Medium: PDF</li>
+                  <li>Tools: Blackboard, Adobe Creative Suite, Grammerly, Curriculum Mapping</li>
+                </ul>
+              </Col>
             </Row>
-            <div>
-              <ul>
-                <li>Audience: Graduate Students</li>
-                <li>Date: 2019</li>
-                <li>Role: Technical Writer, Curriculum Developer</li>
-                <li>Medium: PDF</li>
-                <li>Tools: Blackboard, Adobe Creative Suite, Grammerly, Curriculum Mapping</li>
-              </ul>
-            </div>
           </RightCard>
         </div>
         <div className={classes.JobDescription}>
           <LeftCard
             mainTitle="Job Description"
             >
-            <div className={classes.JobDescriptionSpacer}></div>
             <Row>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="7">
                 <ViewProjectLink
                   cardImage={job_description}
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="5">
                 <ul>
                   <li>
                     <h2>Job Description and Expectations</h2>
@@ -143,7 +142,6 @@ class TechnicalWriting extends Component{
                 </ul>
                 </Col>
               </Row>
-              <div className={classes.JobDescriptionSpacer}></div>
             </LeftCard>
           </div>
         <div className={classes.JobAids}>
@@ -151,7 +149,7 @@ class TechnicalWriting extends Component{
             mainTitle="Job Aids"
             >
             <Row>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="5">
                 <ul>
                   <li><h2>How to Request a Substitute</h2></li>
                   <li>Audience: New Teachers at Georgetown High School</li>
@@ -161,7 +159,7 @@ class TechnicalWriting extends Component{
                   <li>Tools: Google Classroom, Google Suite</li>
                 </ul>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="7">
                 <ViewProjectLink
                   cardImage={jobaids}
                   >

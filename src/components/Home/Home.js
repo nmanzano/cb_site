@@ -1,21 +1,21 @@
 import React from 'react';
 import classes from './Home.module.css';
 // import Aux from '../../hoc/Aux/Aux';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import headshot from '../../assets/images/headshot.jpg';
 
 const home = (props) => (
-    <Container className={classes.HomeBody}>
-      <div className={classes.TRYTHIS}></div>
-      <div className={classes.Content}>
-        <div className={classes.Thumbnail}>
-          <div className={classes.Title}>
-            <h1>WELCOME</h1>
-          </div>
-          <div>
+  <div className={classes.HomeBody}>
+    <Container className={classes.HomeBodyContainer}>
+      <Row>
+        <Col xs="12" lg="6">
+          <div className={classes.HeadShotParentDiv}>
             <img src={headshot} alt="" />
           </div>
-          <div className={classes.Caption}>
+        </Col>
+        <Col xs="12" lg="6">
+          <div className={classes.HomeText}>
+            <h3>Welcome</h3>
             <p>
               I am a life-long learner with a passion for helping people reach their highest potential,
               which is why I've spent most of my life in education.
@@ -36,9 +36,10 @@ const home = (props) => (
               and I look forward to working with you on your next project.
             </p>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </Container>
+  </div>
 )
 
 export default home;

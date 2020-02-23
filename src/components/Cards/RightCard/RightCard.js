@@ -7,7 +7,9 @@ const rightcard = (props) => (
     <div className={classes.RightFiller}></div>
     {props.children}
     <div className={classes.MainTitleParentDiv}>
-      <h2 style={props.headingTop} className={classes.MainTitle}>{props.mainTitle}</h2>
+      <div className={classes.MainTitleWrapper}>
+        <h1 style={props.headingTop} className={classes.MainTitle}>{props.mainTitle}</h1>
+      </div>
     </div>
   </Container>
 )
