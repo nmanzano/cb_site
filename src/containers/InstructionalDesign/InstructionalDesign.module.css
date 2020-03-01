@@ -9,10 +9,6 @@
   font-size: 372%;
 }
 
-.Elearning {
-  /* padding-bottom: 20px; */
-}
-
 .ElearningTitleParentDiv{
   text-align: center;
   width: 100%;
@@ -31,16 +27,6 @@
   margin-top: 50px;
 }
 
-.TopTitle{
-  /* border: 1px solid red;
-  text-align: left; */
-}
-
-.BottomTitle{
-
-  /* text-align: right; */
-}
-
 .VirtualLearning{
   padding-bottom: 6%;
 }
@@ -50,9 +36,11 @@
   text-align: center;
 }
 
-
 @media only screen and (max-width: 991px) {
   .VirtualLearningTitles{
     height: auto;
+  }
+  .PtDiv{
+    padding-top: 3%;
   }
 }

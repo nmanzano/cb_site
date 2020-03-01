@@ -45,4 +45,7 @@ ul{
   .JobAids ul, .JobDescription ul{
     margin-top: 0px;
   }
+  .PtDiv{
+    padding-top: 3%;
+  }
 }

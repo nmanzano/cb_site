@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from './TechnicalWriting.module.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Aux from '../../hoc/Aux/Aux.js'
 
 import CenterCard from '../../components/Cards/CenterCard/CenterCard';
@@ -29,7 +29,7 @@ class TechnicalWriting extends Component{
           </div>
           <CenterCard>
               <Row>
-                <Col xs="12" lg="6">
+                <Col xs="12" lg="6" className={classes.PtDiv}>
                   <ul>
                     <li><h2>Storyboarding</h2></li>
                     <li>Audience: Instructional Designers, Trainers</li>
@@ -43,7 +43,7 @@ class TechnicalWriting extends Component{
                     >
                   </ViewProjectLink>
                 </Col>
-                <Col xs="12" lg="6">
+                <Col xs="12" lg="6" className={classes.PtDiv}>
                   <ViewProjectLink
                     cardImage={portfolio_examples}
                     >
@@ -65,17 +65,19 @@ class TechnicalWriting extends Component{
             mainTitle='Project Proposal'
             >
             <Row>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <h3>Project Management Plan: English</h3>
                 <h3>STAAR Boocamp</h3>
                 <ViewProjectLink
                   cardImage={projectproposal_staar}
+                  liknSrc='/pdfs/ProjectPlan.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={projectproposal_phases}
+                  liknSrc='/pdfs/ProjectPlan.pdf'
                   >
                 </ViewProjectLink>
                 <ul>
@@ -94,19 +96,21 @@ class TechnicalWriting extends Component{
             mainTitle="User Manual"
             >
             <Row>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={usermanual_intro}
+                  liknSrc='/pdfs/DEVELOPING_A_USER_MANUAL.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={user_manual_continue}
+                  liknSrc='/pdfs/DEVELOPING_A_USER_MANUAL.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="12">
+              <Col xs="12" lg="12" className={classes.PtDiv}>
                 <ul>
                   <li>Audience: Graduate Students</li>
                   <li>Date: 2019</li>
@@ -123,13 +127,14 @@ class TechnicalWriting extends Component{
             mainTitle="Job Description"
             >
             <Row>
-              <Col xs="12" lg="7">
+              <Col xs="12" lg="7" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={job_description}
+                  liknSrc='/pdfs/HOMEBOUND_TEACHER.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="5">
+              <Col xs="12" lg="5" className={classes.PtDiv}>
                 <ul>
                   <li>
                     <h2>Job Description and Expectations</h2>
@@ -149,7 +154,7 @@ class TechnicalWriting extends Component{
             mainTitle="Job Aids"
             >
             <Row>
-              <Col xs="12" lg="5">
+              <Col xs="12" lg="5" className={classes.PtDiv}>
                 <ul>
                   <li><h2>How to Request a Substitute</h2></li>
                   <li>Audience: New Teachers at Georgetown High School</li>
@@ -159,9 +164,10 @@ class TechnicalWriting extends Component{
                   <li>Tools: Google Classroom, Google Suite</li>
                 </ul>
               </Col>
-              <Col xs="12" lg="7">
+              <Col xs="12" lg="7" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={jobaids}
+                  liknSrc='/pdfs/SUBSTITUTE_SYSTEM.pdf'
                   >
                   </ViewProjectLink>
               </Col>

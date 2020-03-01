@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from './InstructionalDesign.module.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import {Row, Col } from 'react-bootstrap';
 
 import Aux from '../../hoc/Aux/Aux.js'
 
@@ -16,6 +16,7 @@ import portfolio_video from '../../assets/images/portfolio_video.png'
 import portfolio_curriculum_writing from '../../assets/images/portfolio_curriculum_writing.png'
 import portfolio_instructional_design from '../../assets/images/portfolio_instructional_design.png'
 
+// import JobAid from '/pdfs/jobAid.pdf'
 import ViewProjectLink from "../ViewProjectLink/ViewProjectLink";
 
 class InstructionalDesign extends Component{
@@ -32,6 +33,7 @@ class InstructionalDesign extends Component{
               <Col xs="12" lg="6">
                 <ViewProjectLink
                   cardImage={portfolio_examples}
+                  liknSrc='/pdfs/InstructionalDesign_examples.pdf'
                   >
                 </ViewProjectLink>
                 <br></br>
@@ -43,11 +45,12 @@ class InstructionalDesign extends Component{
                   <li>Tools: Adobe Indesign, Google Classroom, Nearpod</li>
                 </ul>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <h3>Assessment Strategies Workshop</h3>
                 <br></br>
                 <ViewProjectLink
                   cardImage={portfolio_prassessment}
+                  liknSrc='/pdfs/AssessmentStrategiesWorkshop.pdf'
                   >
                 </ViewProjectLink>
               </Col>
@@ -55,10 +58,10 @@ class InstructionalDesign extends Component{
           </CenterCard>
         </div>
         <div className={classes.Elearning}>
-          <RightCard
+          <LeftCard
             mainTitle="eLearning">
             <Row>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <div className={classes.ElearningTitleParentDiv}>
                   <h3>ADDIE</h3>
                   <h3>Model</h3>
@@ -66,6 +69,7 @@ class InstructionalDesign extends Component{
                 <br></br>
                 <ViewProjectLink
                   cardImage={addie_model}
+                  liknSrc='https://rise.articulate.com/share/nzFmNqg8rNLRQEA5F1C2Riy_ZimopC1I'
                   >
                 </ViewProjectLink>
                 <br></br>
@@ -79,13 +83,14 @@ class InstructionalDesign extends Component{
                   </ul>
                 </div>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
                 <div className={classes.ElearningTitleParentDiv}>
                   <h3>Three Instructional Architectures</h3>
                 </div>
                 <br></br>
                 <ViewProjectLink
                   cardImage={three_instructional_archs}
+                  liknSrc='https://rise.articulate.com/share/YGg_8MKmXF29Qr4DF7JLXHKNQuMECxfi'
                   >
                 </ViewProjectLink>
                 <br></br>
@@ -100,20 +105,21 @@ class InstructionalDesign extends Component{
                 </div>
               </Col>
             </Row>
-          </RightCard>
+          </LeftCard>
         </div>
         <div>
-          <LeftCard
+          <RightCard
             mainTitle='Video'
             >
             <Row>
-              <Col xs="12" lg="7">
+              <Col xs="12" lg="7" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={portfolio_video}
+                  liknSrc="https://www.youtube.com/embed/INyQOrMdVZE?autoplay=0&rel=0"
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="5">
+              <Col xs="12" lg="5" className={classes.PtDiv}>
                 <div className={classes.VideoTextDiv}>
                   <ul>
                     <li><h3>How to Create a Course in Rise</h3></li>
@@ -126,17 +132,18 @@ class InstructionalDesign extends Component{
                 </div>
               </Col>
             </Row>
-          </LeftCard>
+          </RightCard>
         </div>
         <div>
-          <CenterCard>
+          <LeftCard>
             <Row>
-              <Col lg="7" className={classes.TopTitle}>
-                <h1 className='pl-md-5'>Curriculum Writing</h1>
-              </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
+                <div className={classes.TopTitle + classes.PtDiv}>
+                  <h1 className='pl-md-5'>Curriculum Writing</h1>
+                </div>
                 <ViewProjectLink
                   cardImage={portfolio_curriculum_writing}
+                  liknSrc='/pdfs/new_teacher_lunch_and_learn.pdf'
                   >
                 </ViewProjectLink>
                 <div>
@@ -149,28 +156,30 @@ class InstructionalDesign extends Component{
                   </ul>
                 </div>
               </Col>
-              <Col xs="12" lg="6">
+              <Col xs="12" lg="6" className={classes.PtDiv}>
+                <div lg="6" className={classes.BottomTitle + classes.PtDiv}>
+                  <h1 className='pl-md-5'>Instructional Design</h1>
+                </div>
                 <ViewProjectLink
                   cardImage={portfolio_instructional_design}
+                  liknSrc='/pdfs/differentiating_product.pdf'
                   >
                   </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="11" className={classes.BottomTitle}>
-                <h1 className='pl-lg-5 float-md-right'>Instructional Design</h1>
-            </Col>
             </Row>
-          </CenterCard>
+          </LeftCard>
         </div>
         <div className={classes.VirtualLearning}>
           <RightCard
             mainTitle="Virtual Learning">
             <Row>
-              <Col xs="12" md="6">
+              <Col xs="12" md="6" className={classes.PtDiv}>
                 <div className={classes.VirtualLearningTitles}>
                   <h3>Graduate Writing Consultant</h3>
                 </div>
                 <ViewProjectLink
                   cardImage={portfolio_curriculum_writing}
+                  liknSrc='/pdfs/differentiating_product.pdf'
                   >
                 </ViewProjectLink>
                 <ul>
@@ -181,12 +190,13 @@ class InstructionalDesign extends Component{
                   <li>Tools: Adobe Connect, Microsoft Zoom</li>
                 </ul>
               </Col>
-              <Col xs="12" md="6">
+              <Col xs="12" md="6" className={classes.PtDiv}>
                 <div className={classes.VirtualLearningTitles}>
                   <h3>Principles of Design: Overcoming the motivation gap</h3>
                 </div>
                 <ViewProjectLink
                   cardImage={portfolio_curriculum_writing}
+                  liknSrc='/pdfs/differentiating_product.pdf'
                   >
                 </ViewProjectLink>
                 <ul>

@@ -1,7 +1,7 @@
 .Body{
   max-width: 1029.8px;
   margin: 70px auto;
-  background-color: #d4d4d4;
+  background-color: #f3f3f3;
   padding: 25px;
   font-family: 'Libre Baskerville', serif;
   position: relative;
@@ -21,7 +21,7 @@
   position: absolute;
   height: -webkit-fill-available;
   top: 0;
-  background-color: #d4d4d4;
+  background-color: #f3f3f3;
   z-index: -1;
 }
 
