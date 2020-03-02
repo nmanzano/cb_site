@@ -18,6 +18,7 @@ class ViewProjectLink extends Component {
 
   componentDidMount(){
     this.linkSrc = this.props.liknSrc
+    console.log(this.linkSrc , 'this.linkSrc ');
     if(this.linkSrc){
       if (this.linkSrc.includes('pdfs')) {
         this.setState({ pdfLink: true });
