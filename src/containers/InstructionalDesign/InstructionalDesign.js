@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classes from './InstructionalDesign.module.css'
+import classes from './InstructionalDesign.module.css';
 import {Row, Col } from 'react-bootstrap';
 
 import Aux from '../../hoc/Aux/Aux.js'

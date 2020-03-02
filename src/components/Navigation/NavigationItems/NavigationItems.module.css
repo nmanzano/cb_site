@@ -1,19 +1,28 @@
 .NavigationItems {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  height: 100%;
-  color: #000000;
   font-family: 'Libre Baskerville', serif;
-}
-.NavigationItems > li{
-  height: inherit;
+  font-size: xx-large!important;
+  color:#000000!important;
 }
 
-.NavName {
+.NavLink{
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+}
+
+.NavBarMobile{
+  border-color:#000000!important;
+  background-color: #d4d4d4!important;
+}
+
+/* .NavBarStyle .navbar-toggler{
+  border: 3px solid red;
+  color: red!important;
+} */
+/* .NavigationItems > li{
+  height: inherit;
+} */
+
+/* .NavName {
   text-align: center;
 }
 
@@ -33,4 +42,4 @@
     width: 100%;
     padding-left: 0px;
   }
-}
+} */
