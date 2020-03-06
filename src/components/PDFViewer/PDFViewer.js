@@ -1,26 +1,28 @@
-import React from 'react';
+import React from "react";
+import {withRouter} from 'react-router-dom';
+import queryString from 'query-string'
+import classes from './PDFViewer.module.css';
+
+
 
 class PDFViewer extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.viewerRef = React.createRef();
-    this.backend = new props.backend();
+    UNSAFE_componentWillMount (){
+      this.pdfSource = queryString.parse(this.props.location.search).q;
+    }
+
+    render() {
+      return (
+        <div className={classes.Body}>
+        <iframe
+        src={this.pdfSource}
+        width="100%"
+        height="100%"
+        >
+        </iframe>
+        </div>
+      );
+    }
   }
 
-  componentDidMount() {
-    const { src } = this.props;
-    const element = this.viewerRef.current;
-    this.backend.init(src, element);
-  }
-
-  render() {
-    return (
-      <div ref={this.viewerRef} id='viewer' style={{ width: '100%', height: '100vh' }}>
-
-       </div>
-    )
-  }
-}
-
-export default PDFViewer;
+export default withRouter(PDFViewer);

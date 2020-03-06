@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import classes from './ViewProjectLink.module.css'
 import {Link, withRouter} from 'react-router-dom';
-// import PDFViewer from '../../components/PDFViewer/PDFViewer';
 
 class ViewProjectLink extends Component {
   state ={

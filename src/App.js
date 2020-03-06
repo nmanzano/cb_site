@@ -7,7 +7,7 @@ import Home from './components/Home/Home';
 import InstructionalDesign from './containers/InstructionalDesign/InstructionalDesign';
 import TechnicalWriting from './containers/TechnicalWriting/TechnicalWriting';
 import Contact from './containers/Contact/Contact';
-import PDFViewerBase from './components/PDFViewer/PDFViewerBase';
+import PDFViewer from './components/PDFViewer/PDFViewer';
 
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
             <Route path="/instructional-design" exact component={InstructionalDesign}></Route>
             <Route path="/contact" exact component={Contact}></Route>
           </Switch>
-          <Route path="/view-pdf" exact component={PDFViewerBase}></Route>
+          <Route path="/view-pdf" exact component={PDFViewer}></Route>
         </Layout>
       </Aux>
     );
