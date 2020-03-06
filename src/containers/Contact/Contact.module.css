@@ -1,3 +1,14 @@
+.Attempt{
+  min-height: 77vh;
+}
+
+.ButtonStyle{
+  color: black!important;
+  background-color: #d4d4d4!important;
+  border-color: black!important;
+  float: right;
+}
+
 .Contact {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
@@ -6,9 +17,13 @@
   margin-top:5%;
   font-family: 'Oswald', sans-serif;
   width: 300px;
-  font-size: 372%;
 }
 
-.Attempt{
-  min-height: 77vh;
+.Contact p{
+  font-size: 50px;
+  margin: 0;
+}
+
+.EmailInput{
+  margin-top: 3%;
 }
