@@ -15,8 +15,8 @@
 
 .Box{
   border: 5px solid grey;
-  width: 500px;
-  height: 130px;
+  width: 450px;
+  height: 150px;
   position: absolute;
   left: 0;
   right: 0;
@@ -31,11 +31,6 @@
   font-family: 'Libre Baskerville', serif;
 }
 
-.subheadings{
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-}
-
 .Dot{
   height: 8px;
   width: 8px;
@@ -44,9 +39,111 @@
   display: inline-block;
 }
 
-@media (max-width: 991px) {
+.DotParent{
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.Instructional{
+  background-color: #f3f3f3;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.Subheadings{
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin: auto!important;
+  width: 50%;
+  /* border: 1px solid blue; */
+}
+
+.Trainer{
+  text-align: center;
+}
+
+.Technical{
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
   .Box{
-    width: 408px;
+    width: 60%;
     height: 156px;
+    /* border: 1px solid red; */
+  }
+  .Subheadings{
+    margin: auto!important;
+    font-size: 20px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Box{
+    width: 60%;
+    height: 156px;
+  }
+  .Subheadings{
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Box{
+    width: 80%;
+    height: 145px;
+    z-index: 0;
+  }
+  .Subheadings{
+    font-size: 16px;
+    width: 100%;
+    /* font-size: 13px; */
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+
+  .Arrow{
+    margin-top: 32vh;
+  }
+
+  .Box{
+    width: 250px;
+    height: 145px;
+    z-index: 0!important;
+  }
+  .DotParent{
+    width: 1px;
+    padding: 0;
+    padding: 0!important;
+  }
+  .Dot{
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .MainTitle h1{
+    font-size: 2rem;
+  }
+
+  .Subheadings{
+    font-size: 14px;
+    width: 300px;
+  }
+  .Trainer{
+    width: 8px;
+    padding: 0!important;
+  }
+
+  .Technical{
+    width: 8px;
+    padding: 0!important;
+  }
+  .Instructional{
+    width: 8px;
+    padding: 0!important;
   }
 }

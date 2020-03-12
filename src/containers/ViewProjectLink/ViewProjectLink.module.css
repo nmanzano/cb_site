@@ -4,6 +4,7 @@
 
 .Projectdesc img{
   width: 100%;
+  height: 300px;
   position: relative;
   opacity: 1;
   transition: opacity 1s;

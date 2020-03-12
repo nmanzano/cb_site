@@ -2,9 +2,9 @@
   text-align: right;
 }
 
-
 ul{
   padding-top: 20px;
+  font-size: 13px;
 }
 
 .Portfolio {
@@ -18,7 +18,7 @@ ul{
   font-size: 372%;
 }
 
-.ProjectProposal ul, h3{
+.ProjectProposal ul{
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ ul{
 }
 
 .JobAids ul, .JobDescription ul{
-  margin-top: 85px;
+  margin-top: 19px;
 }
 
 @media only screen and (max-width: 992px) {

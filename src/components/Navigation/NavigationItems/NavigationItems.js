@@ -20,13 +20,3 @@ const navigationItems = (props) => (
 )
 
 export default navigationItems
-
-
-{/* <ul className={classes.NavigationItems}>
-  <NavigationItem link="/" exact className={classes.NavName}>CASSANDRA</NavigationItem>
-  <NavigationItem link="/home">HOME</NavigationItem>
-  <NavigationItem link="/instructional-design">INSTRUCTIONAL DESIGN</NavigationItem>
-  <NavigationItem link="/technical-writing">TECHNICAL WRITING</NavigationItem>
-  <NavigationItem link="/contact">CONTACT</NavigationItem>
-</ul>
-   */}

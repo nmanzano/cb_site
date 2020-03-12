@@ -36,9 +36,8 @@ class InstructionalDesign extends Component{
                   liknSrc='/pdfs/InstructionalDesign_examples.pdf'
                   >
                 </ViewProjectLink>
-                <br></br>
                 <ul>
-                  <li>Audience: Georgetown ISD Teachers</li>
+                  <li><strong>Audience:</strong> Georgetown ISD Teachers</li>
                   <li>Date: Spring 2019</li>
                   <li>Role: Instructional Designer & Trainer</li>
                   <li>Medium: Instructor-led course with workbook</li>
@@ -46,8 +45,7 @@ class InstructionalDesign extends Component{
                 </ul>
               </Col>
               <Col xs="12" lg="6" className={classes.PtDiv}>
-                <h3>Assessment Strategies Workshop</h3>
-                <br></br>
+                <h4>Assessment Strategies Workshop</h4>
                 <ViewProjectLink
                   cardImage={portfolio_prassessment}
                   liknSrc='/pdfs/AssessmentStrategiesWorkshop.pdf'
@@ -63,19 +61,17 @@ class InstructionalDesign extends Component{
             <Row>
               <Col xs="12" lg="6" className={classes.PtDiv}>
                 <div className={classes.ElearningTitleParentDiv}>
-                  <h3>ADDIE</h3>
-                  <h3>Model</h3>
+                  <h4>ADDIE</h4>
+                <h4>Model</h4>
                 </div>
-                <br></br>
                 <ViewProjectLink
                   cardImage={addie_model}
                   liknSrc='https://rise.articulate.com/share/nzFmNqg8rNLRQEA5F1C2Riy_ZimopC1I'
                   >
                 </ViewProjectLink>
-                <br></br>
                 <div>
                   <ul>
-                    <li>Audience: Instructional Designers</li>
+                    <li><strong>Audience:</strong> Instructional Designers</li>
                     <li>Date: 2019</li>
                     <li>Role: Instructional Designer</li>
                     <li>Medium: eLearning</li>
@@ -85,18 +81,16 @@ class InstructionalDesign extends Component{
               </Col>
               <Col xs="12" lg="6" className={classes.PtDiv}>
                 <div className={classes.ElearningTitleParentDiv}>
-                  <h3>Three Instructional Architectures</h3>
+                  <h4>Three Instructional Architectures</h4>
                 </div>
-                <br></br>
                 <ViewProjectLink
                   cardImage={three_instructional_archs}
                   liknSrc='https://rise.articulate.com/share/YGg_8MKmXF29Qr4DF7JLXHKNQuMECxfi'
                   >
                 </ViewProjectLink>
-                <br></br>
                 <div>
                   <ul>
-                    <li>Audience: Instructional Designers</li>
+                    <li><strong>Audience:</strong> Instructional Designers</li>
                     <li>Date: 2019</li>
                     <li>Role: Instructional Designer</li>
                     <li>Medium: eLearning</li>
@@ -107,23 +101,23 @@ class InstructionalDesign extends Component{
             </Row>
           </LeftCard>
         </div>
-        <div>
+        <div className={classes.VideoBody}>
           <RightCard
             mainTitle='Video'
             >
             <Row>
-              <Col xs="12" lg="7" className={classes.PtDiv}>
+              <Col sm="12" lg="6" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={portfolio_video}
                   liknSrc="https://www.youtube.com/embed/INyQOrMdVZE?autoplay=0&rel=0"
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="5" className={classes.PtDiv}>
+              <Col sm="12" lg="6" className={classes.PtDiv}>
                 <div className={classes.VideoTextDiv}>
                   <ul>
-                    <li><h3>How to Create a Course in Rise</h3></li>
-                    <li>Audience: eLearning Designer</li>
+                    <li><h4 className={classes.VideoTextHeading}>How to Create a Course in Rise</h4></li>
+                  <li><strong>Audience:</strong> eLearning Designer</li>
                     <li>Date: 2019</li>
                     <li>Role: Instructional Designer</li>
                     <li>Medium: Video</li>
@@ -139,7 +133,7 @@ class InstructionalDesign extends Component{
             <Row>
               <Col xs="12" lg="6" className={classes.PtDiv}>
                 <div className={classes.TopTitle + classes.PtDiv}>
-                  <h1 className='pl-md-5'>Curriculum Writing</h1>
+                  <h4 className=''>Curriculum Writing</h4>
                 </div>
                 <ViewProjectLink
                   cardImage={portfolio_curriculum_writing}
@@ -148,7 +142,7 @@ class InstructionalDesign extends Component{
                 </ViewProjectLink>
                 <div>
                   <ul>
-                    <li>Audience: New Teachers at Harker Heights High School</li>
+                    <li><strong>Audience:</strong> New Teachers at Harker Heights High School</li>
                     <li>Date: 2017</li>
                     <li>Role: Instructional Designer, Curriculum Writer, Project Manager, Trainer</li>
                     <li>Medium: Instructor-led Courses</li>
@@ -158,7 +152,7 @@ class InstructionalDesign extends Component{
               </Col>
               <Col xs="12" lg="6" className={classes.PtDiv}>
                 <div lg="6" className={classes.BottomTitle + classes.PtDiv}>
-                  <h1 className='pl-md-5'>Instructional Design</h1>
+                  <h4 className=''>Instructional Design</h4>
                 </div>
                 <ViewProjectLink
                   cardImage={portfolio_instructional_design}
@@ -175,7 +169,7 @@ class InstructionalDesign extends Component{
             <Row>
               <Col xs="12" md="6" className={classes.PtDiv}>
                 <div className={classes.VirtualLearningTitles}>
-                  <h3>Graduate Writing Consultant</h3>
+                  <h4>Graduate Writing Consultant</h4>
                 </div>
                 <ViewProjectLink
                   cardImage={portfolio_curriculum_writing}
@@ -183,7 +177,7 @@ class InstructionalDesign extends Component{
                   >
                 </ViewProjectLink>
                 <ul>
-                  <li>Audience: Arizona State University Graduate students</li>
+                  <li><strong>Audience:</strong> Arizona State University Graduate students</li>
                   <li>Date: 2019</li>
                   <li>Role: Trainer, Coach</li>
                   <li>Medium: eLearning</li>
@@ -192,7 +186,7 @@ class InstructionalDesign extends Component{
               </Col>
               <Col xs="12" md="6" className={classes.PtDiv}>
                 <div className={classes.VirtualLearningTitles}>
-                  <h3>Principles of Design: Overcoming the motivation gap</h3>
+                  <h4>Principles of Design: Overcoming the motivation gap</h4>
                 </div>
                 <ViewProjectLink
                   cardImage={portfolio_curriculum_writing}
@@ -200,7 +194,7 @@ class InstructionalDesign extends Component{
                   >
                 </ViewProjectLink>
                 <ul>
-                  <li>Audience: Instructional Designers, Trainers</li>
+                  <li><strong>Audience:</strong> Instructional Designers, Trainers</li>
                   <li>Date: 2019</li>
                   <li>Role: Instructional Designer</li>
                   <li>Medium: eLearning</li>

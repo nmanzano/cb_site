@@ -5,7 +5,7 @@
   padding: 25px;
   font-family: 'Libre Baskerville', serif;
   position: relative;
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,12 +35,16 @@
   height: 100%;
   width: 100%;
   text-align: center;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 992px) {
   .Body{
     height: auto;
     margin-bottom: 21%;
+  }
+  .MainTitleParentDiv{
+    bottom: 3%;
   }
 }
 

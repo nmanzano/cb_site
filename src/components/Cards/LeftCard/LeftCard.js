@@ -8,7 +8,7 @@ const leftcard = (props) => (
     {props.children}
     <div className={classes.MainTitleParentDiv}>
       <div className={classes.MainTitleWrapper}>
-        <h1 className={classes.MainTitle}>{props.mainTitle}</h1>
+        <p className={classes.MainTitle}>{props.mainTitle}</p>
       </div>
     </div>
   </Container>

@@ -31,8 +31,8 @@ class TechnicalWriting extends Component{
               <Row>
                 <Col xs="12" lg="6" className={classes.PtDiv}>
                   <ul>
-                    <li><h2>Storyboarding</h2></li>
-                    <li>Audience: Instructional Designers, Trainers</li>
+                    <li><h4>Storyboarding</h4></li>
+                  <li><strong>Audience:</strong> Instructional Designers, Trainers</li>
                     <li>Date: 2019</li>
                     <li>Role: Instructional Designer</li>
                     <li>Medium: Google Doc</li>
@@ -49,8 +49,8 @@ class TechnicalWriting extends Component{
                     >
                   </ViewProjectLink>
                   <ul className={classes.CurriculumStyle}>
-                    <li><h2>Curriculum Writing</h2></li>
-                    <li>Audience: Instructional Designers, Curriculum Department</li>
+                    <li><h4>Curriculum Writing</h4></li>
+                  <li><strong>Audience:</strong> Instructional Designers, Curriculum Department</li>
                     <li>Date: 2017</li>
                     <li>Role: Curriculum Developer</li>
                     <li>Medium: Schoology</li>
@@ -66,8 +66,8 @@ class TechnicalWriting extends Component{
             >
             <Row>
               <Col xs="12" lg="6" className={classes.PtDiv}>
-                <h3>Project Management Plan: English</h3>
-                <h3>STAAR Boocamp</h3>
+                <h4>Project Management Plan: English</h4>
+              <h4>STAAR Boocamp</h4>
                 <ViewProjectLink
                   cardImage={projectproposal_staar}
                   liknSrc='/pdfs/ProjectPlan.pdf'
@@ -81,7 +81,7 @@ class TechnicalWriting extends Component{
                   >
                 </ViewProjectLink>
                 <ul>
-                  <li>Audience: Harker Heights High School Administration</li>
+                  <li><strong>Audience:</strong> Harker Heights High School Administration</li>
                   <li>Date: 2017</li>
                   <li>Role: Project Manager, Technical Writer</li>
                   <li>Medium: Formally Written Proposal</li>
@@ -112,7 +112,7 @@ class TechnicalWriting extends Component{
               </Col>
               <Col xs="12" lg="12" className={classes.PtDiv}>
                 <ul>
-                  <li>Audience: Graduate Students</li>
+                  <li><strong>Audience:</strong> Graduate Students</li>
                   <li>Date: 2019</li>
                   <li>Role: Technical Writer, Curriculum Developer</li>
                   <li>Medium: PDF</li>
@@ -137,9 +137,9 @@ class TechnicalWriting extends Component{
               <Col xs="12" lg="5" className={classes.PtDiv}>
                 <ul>
                   <li>
-                    <h2>Job Description and Expectations</h2>
+                    <h4>Job Description and Expectations</h4>
                   </li>
-                  <li>Audience: Homebound Teachers at Harker Heights High School</li>
+                  <li><strong>Audience:</strong> Homebound Teachers at Harker Heights High School</li>
                   <li>Date: 2018</li>
                   <li>Role: Project Manager, Technical Writer</li>
                   <li>Medium: PDF</li>
@@ -156,8 +156,8 @@ class TechnicalWriting extends Component{
             <Row>
               <Col xs="12" lg="5" className={classes.PtDiv}>
                 <ul>
-                  <li><h2>How to Request a Substitute</h2></li>
-                  <li>Audience: New Teachers at Georgetown High School</li>
+                  <li><h4>How to Request a Substitute</h4></li>
+                  <li><strong>Audience:</strong> New Teachers at Georgetown High School</li>
                   <li>Date: 2018</li>
                   <li>Role: Technical Writer</li>
                   <li>Medium: PDF</li>
