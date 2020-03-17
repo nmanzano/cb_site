@@ -16,7 +16,6 @@ import portfolio_video from '../../assets/images/portfolio_video.png'
 import portfolio_curriculum_writing from '../../assets/images/portfolio_curriculum_writing.png'
 import portfolio_instructional_design from '../../assets/images/portfolio_instructional_design.png'
 
-// import JobAid from '/pdfs/jobAid.pdf'
 import ViewProjectLink from "../ViewProjectLink/ViewProjectLink";
 
 class InstructionalDesign extends Component{
@@ -25,8 +24,8 @@ class InstructionalDesign extends Component{
     return(
       <Aux>
         <div>
-          <div className={classes.Portfolio}>
-            <h1>PORTFOLIO</h1>
+          <div className={classes.PortfolioTitle}>
+            <p>PORTFOLIO</p>
           </div>
           <CenterCard>
             <Row className="justify-content-center">

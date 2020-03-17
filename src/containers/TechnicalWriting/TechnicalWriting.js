@@ -22,8 +22,8 @@ class TechnicalWriting extends Component{
     return(
       <Aux>
         <div className={classes.Intro}>
-          <div className={classes.Portfolio}>
-            <h1>PORTFOLIO</h1>
+          <div className={classes.PortfolioTitle}>
+            <p>PORTFOLIO</p>
           </div>
           <CenterCard>
               <Row className="justify-content-center">

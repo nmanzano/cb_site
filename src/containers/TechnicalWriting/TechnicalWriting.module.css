@@ -7,15 +7,19 @@ ul{
   font-size: 13px;
 }
 
-.Portfolio {
+.PortfolioTitle {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
   text-align: center;
   margin: auto;
-  margin-top:5%;
+  margin-top:4%;
   font-family: 'Oswald', sans-serif;
-  width: 300px;
-  font-size: 372%;
+  width: 220px;
+}
+
+.PortfolioTitle p{
+  font-size: 54px;
+  margin: 0;
 }
 
 .ProjectProposal ul{
