@@ -13,10 +13,8 @@ import projectproposal_phases from '../../assets/images/ProjectProposal_phases.p
 import usermanual_intro from '../../assets/images/usermanual_intro.png'
 import user_manual_continue from '../../assets/images/user_manual_continue.png'
 import job_description from '../../assets/images/job_description.png'
-import jobaids from '../../assets/images/jobaids.png'
-
-
-import ViewProjectLink from "../ViewProjectLink/ViewProjectLink"
+import jobaids from '../../assets/images/jobaids.png';
+import ViewProjectLink from "../ViewProjectLink/ViewProjectLink";
 
 class TechnicalWriting extends Component{
 
@@ -28,8 +26,8 @@ class TechnicalWriting extends Component{
             <h1>PORTFOLIO</h1>
           </div>
           <CenterCard>
-              <Row>
-                <Col xs="12" lg="6" className={classes.PtDiv}>
+              <Row className="justify-content-center">
+                <Col xs="11" md="10" lg="6" className={classes.PtDiv}>
                   <ul>
                     <li><h4>Storyboarding</h4></li>
                   <li><strong>Audience:</strong> Instructional Designers, Trainers</li>
@@ -43,7 +41,7 @@ class TechnicalWriting extends Component{
                     >
                   </ViewProjectLink>
                 </Col>
-                <Col xs="12" lg="6" className={classes.PtDiv}>
+                <Col xs="11" md="10" lg="6" className={classes.PtDiv}>
                   <ViewProjectLink
                     cardImage={portfolio_examples}
                     >
@@ -64,17 +62,17 @@ class TechnicalWriting extends Component{
           <LeftCard
             mainTitle='Project Proposal'
             >
-            <Row>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="11" md="10" lg="6" className={classes.PtDiv}>
                 <h4>Project Management Plan: English</h4>
-              <h4>STAAR Boocamp</h4>
+                <h4>STAAR Boocamp</h4>
                 <ViewProjectLink
                   cardImage={projectproposal_staar}
                   liknSrc='/pdfs/ProjectPlan.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+              <Col xs="11" md="10" lg="6" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={projectproposal_phases}
                   liknSrc='/pdfs/ProjectPlan.pdf'
@@ -95,22 +93,22 @@ class TechnicalWriting extends Component{
           <RightCard
             mainTitle="User Manual"
             >
-            <Row>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="11" md="10" lg="5" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={usermanual_intro}
                   liknSrc='/pdfs/DEVELOPING_A_USER_MANUAL.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+              <Col xs="11" md="10" lg="5" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={user_manual_continue}
                   liknSrc='/pdfs/DEVELOPING_A_USER_MANUAL.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="12" className={classes.PtDiv}>
+              <Col xs="11" md="10" lg="12" className={classes.PtDiv}>
                 <ul>
                   <li><strong>Audience:</strong> Graduate Students</li>
                   <li>Date: 2019</li>
@@ -126,15 +124,15 @@ class TechnicalWriting extends Component{
           <LeftCard
             mainTitle="Job Description"
             >
-            <Row>
-              <Col xs="12" lg="7" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="11" md="9" lg="6" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={job_description}
                   liknSrc='/pdfs/HOMEBOUND_TEACHER.pdf'
                   >
                 </ViewProjectLink>
               </Col>
-              <Col xs="12" lg="5" className={classes.PtDiv}>
+              <Col xs="11" md="10" lg="5" className={classes.PtDiv}>
                 <ul>
                   <li>
                     <h4>Job Description and Expectations</h4>
@@ -153,8 +151,8 @@ class TechnicalWriting extends Component{
           <RightCard
             mainTitle="Job Aids"
             >
-            <Row>
-              <Col xs="12" lg="5" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="11" md="10" lg="4" className={classes.PtDiv}>
                 <ul>
                   <li><h4>How to Request a Substitute</h4></li>
                   <li><strong>Audience:</strong> New Teachers at Georgetown High School</li>
@@ -164,7 +162,7 @@ class TechnicalWriting extends Component{
                   <li>Tools: Google Classroom, Google Suite</li>
                 </ul>
               </Col>
-              <Col xs="12" lg="7" className={classes.PtDiv}>
+              <Col xs="11" md="8" lg="6" xl="5" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={jobaids}
                   liknSrc='/pdfs/SUBSTITUTE_SYSTEM.pdf'

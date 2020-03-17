@@ -15,7 +15,7 @@ const home = (props) => (
         </Col>
         <Col xs="12" lg="6">
           <div className={classes.HomeText}>
-            <h3>Welcome</h3>
+            <p className={classes.MainTitle}>Welcome</p>
             <p>
               I am a life-long learner with a passion for helping people reach their highest potential,
               which is why I've spent most of my life in education.

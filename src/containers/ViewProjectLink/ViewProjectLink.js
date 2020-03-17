@@ -64,7 +64,7 @@ class ViewProjectLink extends Component {
     if (this.state.videoLink){
       typeOfLink =(
         <div>
-          <iframe title="How to Create a Course in Rise" width="450" height="315" src={this.linkSrc} frameBorder="0" allow="accelerometer;encrypted-media; gyroscope;" allowFullScreen></iframe>
+          <iframe title="How to Create a Course in Rise" className={classes.VideoStyle} src={this.linkSrc} frameBorder="0" allow="accelerometer;encrypted-media; gyroscope;" allowFullScreen></iframe>
       </div>)
       }
     if (this.state.externalLink) {

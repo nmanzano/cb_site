@@ -29,8 +29,8 @@ class InstructionalDesign extends Component{
             <h1>PORTFOLIO</h1>
           </div>
           <CenterCard>
-            <Row>
-              <Col xs="12" lg="6">
+            <Row className="justify-content-center">
+              <Col xs="12" md="9" lg="6">
                 <ViewProjectLink
                   cardImage={portfolio_examples}
                   liknSrc='/pdfs/InstructionalDesign_examples.pdf'
@@ -44,7 +44,7 @@ class InstructionalDesign extends Component{
                   <li>Tools: Adobe Indesign, Google Classroom, Nearpod</li>
                 </ul>
               </Col>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+              <Col xs="12" md="9" lg="6" className={classes.PtDiv}>
                 <h4>Assessment Strategies Workshop</h4>
                 <ViewProjectLink
                   cardImage={portfolio_prassessment}
@@ -58,8 +58,8 @@ class InstructionalDesign extends Component{
         <div className={classes.Elearning}>
           <LeftCard
             mainTitle="eLearning">
-            <Row>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="12" md="9" lg="6" className={classes.PtDiv}>
                 <div className={classes.ElearningTitleParentDiv}>
                   <h4>ADDIE</h4>
                 <h4>Model</h4>
@@ -79,7 +79,7 @@ class InstructionalDesign extends Component{
                   </ul>
                 </div>
               </Col>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+              <Col xs="12" md="9" lg="6" className={classes.PtDiv}>
                 <div className={classes.ElearningTitleParentDiv}>
                   <h4>Three Instructional Architectures</h4>
                 </div>
@@ -105,19 +105,19 @@ class InstructionalDesign extends Component{
           <RightCard
             mainTitle='Video'
             >
-            <Row>
-              <Col sm="12" lg="6" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="11" md="10" lg="7" className={classes.PtDiv}>
                 <ViewProjectLink
                   cardImage={portfolio_video}
                   liknSrc="https://www.youtube.com/embed/INyQOrMdVZE?autoplay=0&rel=0"
                   >
                 </ViewProjectLink>
               </Col>
-              <Col sm="12" lg="6" className={classes.PtDiv}>
+              <Col xs="11" md="11" lg="5" className={classes.PtDiv}>
                 <div className={classes.VideoTextDiv}>
                   <ul>
                     <li><h4 className={classes.VideoTextHeading}>How to Create a Course in Rise</h4></li>
-                  <li><strong>Audience:</strong> eLearning Designer</li>
+                    <li><strong>Audience:</strong> eLearning Designer</li>
                     <li>Date: 2019</li>
                     <li>Role: Instructional Designer</li>
                     <li>Medium: Video</li>
@@ -130,8 +130,8 @@ class InstructionalDesign extends Component{
         </div>
         <div>
           <LeftCard>
-            <Row>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="12" md="9" lg="5" className={classes.PtDiv}>
                 <div className={classes.TopTitle + classes.PtDiv}>
                   <h4 className=''>Curriculum Writing</h4>
                 </div>
@@ -150,7 +150,7 @@ class InstructionalDesign extends Component{
                   </ul>
                 </div>
               </Col>
-              <Col xs="12" lg="6" className={classes.PtDiv}>
+              <Col xs="12" md="9" lg="5" className={classes.PtDiv}>
                 <div lg="6" className={classes.BottomTitle + classes.PtDiv}>
                   <h4 className=''>Instructional Design</h4>
                 </div>
@@ -166,8 +166,8 @@ class InstructionalDesign extends Component{
         <div className={classes.VirtualLearning}>
           <RightCard
             mainTitle="Virtual Learning">
-            <Row>
-              <Col xs="12" md="6" className={classes.PtDiv}>
+            <Row className="justify-content-center">
+              <Col xs="12" md="9" lg="5" className={classes.PtDiv}>
                 <div className={classes.VirtualLearningTitles}>
                   <h4>Graduate Writing Consultant</h4>
                 </div>
@@ -184,7 +184,7 @@ class InstructionalDesign extends Component{
                   <li>Tools: Adobe Connect, Microsoft Zoom</li>
                 </ul>
               </Col>
-              <Col xs="12" md="6" className={classes.PtDiv}>
+              <Col xs="12" md="9" lg="5" className={classes.PtDiv}>
                 <div className={classes.VirtualLearningTitles}>
                   <h4>Principles of Design: Overcoming the motivation gap</h4>
                 </div>

@@ -13,33 +13,3 @@
   border-color:#000000!important;
   background-color: #d4d4d4!important;
 }
-
-/* .NavBarStyle .navbar-toggler{
-  border: 3px solid red;
-  color: red!important;
-} */
-/* .NavigationItems > li{
-  height: inherit;
-} */
-
-/* .NavName {
-  text-align: center;
-}
-
-@media (min-width: 500px) {
-  .NavigationItems{
-    flex-flow: row;
-    font-size: 140%;
-  }
-}
-@media (max-width: 1000px) {
-  .NavigationItems{
-    font-size: 100%;
-  }
-}
-@media (min-width: 400px) {
-  .NavName {
-    width: 100%;
-    padding-left: 0px;
-  }
-} */

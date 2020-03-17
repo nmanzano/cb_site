@@ -23,10 +23,3 @@ const welcomeLogo = (props) => (
 )
 
 export default welcomeLogo;
-
-
-{/* <Col style={{textAlign:'center', backgroundColor: '#f3f3f3'}} sm md="auto">INSTRUCTIONAL DESIGNER</Col>
-<Col style={{textAlign:'center'}} sm="1" md="auto"><span className={classes.Dot}></span></Col>
-<Col style={{textAlign:'center'}} sm md="auto">TRAINER</Col>
-<Col style={{textAlign:'center'}} sm="1" md="auto"><span className={classes.Dot}></span></Col>
-<Col style={{textAlign:'center', backgroundColor: '#f3f3f3'}} sm md="auto">TECHNICAL WRITER</Col> */}

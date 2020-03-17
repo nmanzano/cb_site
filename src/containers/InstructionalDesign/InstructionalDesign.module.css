@@ -34,7 +34,7 @@ h4{
 .VideoTextDiv{
   margin-top: 50px;
   /* border: 1px solid; */
-  width: 120%;
+  /* width: 120%; */
 }
 
 .VirtualLearning{
@@ -58,7 +58,10 @@ h4{
   }
   .VideoTextDiv ul{
     text-align: center;
-    width: 50%;
-    margin: auto;
+    /* width: 50%; */
+    /* margin: auto; */
+  }
+  .VideoTextHeading{
+    text-align: center;
   }
 }
