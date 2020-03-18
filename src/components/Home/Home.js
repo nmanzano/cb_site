@@ -8,7 +8,7 @@ const home = (props) => (
   <div className={classes.HomeBody}>
     <Container className={classes.HomeBodyContainer}>
       <Row>
-        <Col xs="12" lg="6">
+        <Col xs="12" lg="6" className={classes.HeadShotCol}>
           <div className={classes.HeadShotParentDiv}>
             <img src={headshot} alt="" />
           </div>

@@ -1,9 +1,14 @@
 import React from 'react';
 import classes from './Footer.module.css'
+import { FaLinkedin } from 'react-icons/fa';
 
 const footer = (props) => (
   <footer className={classes.Footer}>
-    <h2>FOOTER</h2>
+    <div className={classes.LinkDiv}>  
+    <a href="https://www.linkedin.com/in/cassandra-baker-2653bb186/"  target="_blank" className="btn btn-block btn-social btn-twitter">
+      <h3> Lets Connect <FaLinkedin /></h3>
+    </a>
+  </div>
   </footer>
 )
 

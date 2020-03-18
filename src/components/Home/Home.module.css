@@ -1,6 +1,7 @@
 .HomeText {
   font-family: 'Libre Baskerville', serif;
   text-align: left;
+  padding: 3%;
 }
 
 .MainTitle{
@@ -8,6 +9,11 @@
   font-family: 'Oswald', sans-serif;
   font-size: 70px;
 }
+
+.HeadShotCol{
+  margin: auto;
+}
+
 .HeadShotParentDiv{
   width: 75%;
   margin: auto;
