@@ -1,21 +1,59 @@
 import React, { Component } from "react";
 import {Row, Col, Form, Button, Container } from 'react-bootstrap';
+import axios from 'axios';
 
 import classes from './Contact.module.css';
 import Aux from '../../hoc/Aux/Aux.js'
-import CenterCard from '../../components/Cards/CenterCard/CenterCard';
 import contact_picture from '../../assets/images/contact_picture.jpg';
 
 class Contact extends Component {
 
+  state = {
+    data: null
+  };
+
+  handleSubmit(e){
+    const name = document.getElementById('name').value;
+    console.log(name, 'name');
+    // const name = document.getElementById('name').value;
+    // const email = document.getElementById('email').value;
+    // const message = document.getElementById('message').value;
+    e.preventDefault();
+    // axios({
+    //   method: "POST",
+    //   url:"/send-email",
+    //   data: {
+    //     name: name,
+    //   }
+    // })
+  };
+
+  componentDidMount() {
+      // Call our fetch function below once the component mounts
+    this.callBackendAPI()
+      .then(res => this.setState({ data: res.express }))
+      .catch(err => console.log(err));
+  }
+    // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
+  callBackendAPI = async () => {
+    const response = await fetch('/express_backend');
+    const body = await response.json();
+
+    if (response.status !== 200) {
+      throw Error(body.message)
+    }
+    return body;
+  };
+
   render() {
     return (
       <Aux>
+        <p>{this.state.data}</p>
         <div className={classes.ContactTitle}>
           <p>LET'S CONNECT</p>
         </div>
         <Container className={classes.ContactBody}>
-          <Row>
+          <Row className={classes.ContactRow}>
             <Col md="12" lg="6" className={classes.ContactPictureCol}>
               <div className={classes.ContactPicture}>
                 <img src={contact_picture} alt="" />
@@ -23,31 +61,21 @@ class Contact extends Component {
             </Col>
             <Col md="12" lg="6" className={classes.ContactFieldsCol}>
               <div className={classes.ContactCard}>
-                <Form>
-                <Row>
-                   <Col>
-                     <Form.Control placeholder="First name" />
-                   </Col>
-                   <Col>
-                     <Form.Control placeholder="Last name" />
-                   </Col>
-                   <Col md={12} className={classes.EmailInput}>
-                     <Form.Group controlId="exampleForm.ControlInput1">
-                       <Form.Control type="email" placeholder="Email address" />
-                     </Form.Group>
-                   </Col>
-                   <Col md={12}>
-                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                       <Form.Control as="textarea" rows="3" placeholder="Write your message" />
-                   </Form.Group>
-                   </Col>
-                   <Col md={12}>
-                     <Button className={classes.ButtonStyle + " col-sm-12 col-lg-4"} variant="primary" type="submit">
-                       Submit
-                     </Button>
-                   </Col>
-                  </Row>
-                </Form>
+                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                    <div className="form-group">
+                      <input type="text" className="form-control" id="name" placeholder="Name"/>
+                    </div>
+                    <div className="form-group">
+                      <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Email"/>
+                    </div>
+                    <div className="form-group">
+                      <textarea className="form-control" rows="5" id="message" placeholder="Write your message" ></textarea>
+                    </div>
+
+                  <Button className={classes.ButtonStyle + " col-sm-12 col-lg-4"} variant="primary" type="submit">
+                    Submit
+                  </Button>
+                </form>
               </div>
             </Col>
           </Row>

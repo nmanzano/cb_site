@@ -1,3 +1,7 @@
+.EntireBody{
+  border: 1px solid red;
+}
+
 .CurriculumStyle{
   text-align: right;
 }

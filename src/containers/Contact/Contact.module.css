@@ -1,5 +1,15 @@
 .ContactBody{
-  margin: 5% auto;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 86vh;
+  position: relative;
+}
+
+.ContactRow{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .ButtonStyle{
@@ -25,11 +35,16 @@
 }
 
 .ContactCard{
-  padding: 25% 6%;
+  padding-top: 15%;
+  padding-bottom: 0;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .ContactPictureCol, .ContactFieldsCol{
   padding: 0!important;
+  overflow: hidden;
+  height: 460px;
 }
 
 .ContactPicture img{
@@ -41,4 +56,35 @@
 }
 .EmailInput{
   margin-top: 3%;
+}
+
+@media only screen and (max-width: 992px) {
+  .ContactCard{
+    padding-top: 0%;
+  }
+  .ContactRow{
+    top: 8%;
+    transform: translateY(-8%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ContactBody{
+    margin-bottom: 1%;
+    height: 67vh;
+  }
+  .ContactRow{
+    top: 30%;
+    transform: translateY(-30%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ContactBody{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .ContactRow{
+    top: 20%;
+    transform: translateY(-20%);
+  }
 }

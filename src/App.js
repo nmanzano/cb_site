@@ -8,7 +8,7 @@ import InstructionalDesign from './containers/InstructionalDesign/InstructionalD
 import TechnicalWriting from './containers/TechnicalWriting/TechnicalWriting';
 import Contact from './containers/Contact/Contact';
 import PDFViewer from './components/PDFViewer/PDFViewer';
-
+import './App.module.css';
 
 class App extends Component {
 
